@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATOM copilot - Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-gray-900 flex font-['Inter']">
+    <!-- Excel-like grid background -->
+    <div class="flex-grow grid grid-cols-12 gap-px bg-gray-700">
+        <!-- Create a 12x12 grid -->
+        <div class="col-span-12 h-8 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <div class="col-span-1 h-6 bg-gray-800"></div>
+        <!-- Repeat for more rows as needed -->
+    </div>
+
+    <!-- Sign-in form -->
+    <div class="w-96 bg-white p-8 shadow-lg flex flex-col justify-center">
+        <div class="mb-8 text-center">
+            <h1 class="text-3xl font-bold">ATOM copilot</h1>
+            <div class="mt-2 text-gray-600">Sign in to your account</div>
+        </div>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="name@example.com">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                <input type="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign in</button>
+        </form>
+        <div class="mt-4 text-center">
+            <a href="#" class="text-sm text-indigo-600 hover:text-indigo-500">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>
